@@ -1,342 +1,141 @@
 # Project Status
 
-## Modern Frontend Engineering
+**Project:** Modern Frontend Engineering  
+**Version:** 0.1.0  
+**Status:** Initial Release  
+**License:** MIT
 
-**Repository:** `thirusakthi-dev/modern-frontend-engineering`\
-**Version:** `0.1.0`\
-**License:** MIT\
-**Status:** Development in progress
+## Overview
 
-______________________________________________________________________
+Modern Frontend Engineering is an agent-independent skill designed to help AI coding agents build, improve, debug, review, and maintain modern frontend applications.
 
-## 1. Project Objective
+It focuses on practical engineering quality across the complete frontend development lifecycle.
 
-Build a portable, comprehensive frontend engineering Agent Skill that helps AI coding agents work like experienced frontend engineers.
+The skill supports both:
 
-The skill must support:
+- **New projects** — planning, architecture, scaffolding, implementation, and production preparation.
+- **Existing projects** — repository inspection, feature development, bug fixing, debugging, refactoring, and maintenance.
 
-- Building new frontend applications.
-- Understanding and modifying existing projects.
-- Fixing bugs and debugging root causes.
-- Implementing and improving features.
-- Designing maintainable frontend architecture.
-- Building consistent, high-quality user interfaces.
-- Integrating APIs and managing application state.
-- Applying accessibility, security and performance standards.
-- Testing and verifying implementations.
-- Preparing applications for production.
+## Current Capabilities
 
-The skill must work across compatible coding agents, including OpenCode, Claude Code, Cursor and Codex.
+### Core Engineering
 
-## 2. Core Engineering Requirements
+- React engineering.
+- Next.js App Router.
+- TypeScript and code quality.
+- Frontend architecture and project structure.
+- Package selection and ecosystem evaluation.
+- Reusable UI components and frontend modules.
+- State management.
 
-### New Project Development
+### UI/UX Engineering
 
-The expected workflow:
+- UI design quality and visual consistency.
+- Responsive layouts and navigation.
+- Accessibility and WCAG.
+- Theming and dark mode.
+- Internationalization and RTL.
+- Dialogs, modals, and overlays.
+- Notifications and push support.
 
-1. Understand requirements.
-1. Plan architecture.
-1. Establish project structure.
-1. Configure the development environment.
-1. Implement features.
-1. Test functionality.
-1. Verify quality.
-1. Prepare for deployment.
+### Application Development
 
-### Existing Project Development
+- API integration.
+- Forms and validation.
+- Authentication and authorization.
+- Role-based access control.
+- SEO and discoverability.
+- Progressive Web Apps and offline support.
+- Rendering and caching strategies.
 
-The expected workflow:
+### Production Engineering
 
-1. Inspect the repository.
-1. Understand the existing stack and architecture.
-1. Read relevant source files and documentation.
-1. Trace the affected functionality.
-1. Identify the actual problem.
-1. Implement the smallest reliable change.
-1. Preserve unrelated functionality.
-1. Add or update tests.
-1. Verify changes.
-
-The skill must never assume every task starts from an empty repository.
+- Frontend security.
+- Environment configuration.
+- Performance and Core Web Vitals.
+- Testing strategy.
+- Debugging and self-correction.
+- Observability and monitoring.
+- Production readiness.
+- CI/CD and deployment.
 
 ### Engineering Quality
 
-The agent must:
+- Context-aware repository inspection.
+- Correctness and maintainability.
+- Anti-AI-slop standards.
+- Simplicity and justified technical decisions.
+- Security and accessibility awareness.
+- Verification of implementation changes.
+- Preservation of existing project conventions.
 
-- Prefer correctness over plausible output.
-- Avoid unnecessary complexity.
-- Preserve existing project conventions.
-- Avoid unnecessary dependencies.
-- Produce complete, functional implementations.
-- Follow strict TypeScript practices where applicable.
-- Consider accessibility and security.
-- Verify actual behavior.
-- Report limitations honestly.
+## Repository Contents
 
-### Anti-AI-Slop Standard
+| Path                  | Purpose                                |
+| --------------------- | -------------------------------------- |
+| `SKILL.md`            | Main agent instructions                |
+| `references/`         | Detailed frontend engineering guidance |
+| `examples/`           | Practical implementation patterns      |
+| `scripts/`            | Validation and maintenance tooling     |
+| `evals/`              | Skill evaluation cases                 |
+| `README.md`           | Project overview and installation      |
+| `CHANGELOG.md`        | Release history                        |
+| `CONTRIBUTING.md`     | Contribution guidelines                |
+| `DEVELOPMENT_PLAN.md` | Development direction                  |
+| `LICENSE`             | MIT License                            |
 
-A cross-cutting quality requirement inspired by Impeccable's quality-focused approach, but applicable to the entire engineering lifecycle.
+## Validation Status
 
-Prevent:
+The following checks have passed in the development environment:
 
-- Generic AI-generated UI.
-- Repetitive and unnecessary components.
-- Overengineered architecture.
-- Fake or incomplete functionality.
-- Superficial testing.
-- Invented APIs and configuration.
-- Unverified technical claims.
-- Unnecessary documentation.
-- Unsupported completion claims.
+| Check                                         | Status              |
+| --------------------------------------------- | ------------------- |
+| Agent Skill metadata and structure validation | Passed              |
+| Markdown formatting                           | Passed              |
+| Python linting                                | Passed              |
+| Python formatting                             | Passed              |
+| Markdown link checking                        | Passed              |
+| Python tests                                  | Not yet implemented |
 
-The agent should understand context, critique its work, improve meaningful weaknesses and verify results.
+### Validation Command
 
-This requirement must be integrated into `SKILL.md`, specialized references and evaluation scenarios.
-
-______________________________________________________________________
-
-## 3. Repository Structure
-
-```text
-modern-frontend-engineering/
-│
-├── SKILL.md
-├── README.md
-├── LICENSE
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── DEVELOPMENT_PLAN.md
-├── PROJECT_STATUS.md
-│
-├── references/
-│   ├── architecture-and-project-structure.md
-│   ├── react-engineering.md
-│   ├── nextjs-engineering.md
-│   ├── rendering-and-caching-strategies.md
-│   ├── typescript-and-code-quality.md
-│   │
-│   ├── global-styles-and-design-tokens.md
-│   ├── theming-and-dark-mode.md
-│   ├── reusable-ui-components.md
-│   ├── layouts-and-navigation.md
-│   ├── dialogs-modals-and-overlays.md
-│   ├── notifications-and-push.md
-│   ├── ui-design-quality-and-impeccable.md
-│   │
-│   ├── authentication-and-authorization.md
-│   ├── api-integration.md
-│   ├── forms-and-validation.md
-│   ├── state-management.md
-│   ├── package-selection-and-ecosystem.md
-│   ├── reusable-frontend-modules.md
-│   │
-│   ├── accessibility-and-wcag.md
-│   ├── testing-strategy.md
-│   ├── anti-ai-slop-and-engineering-quality.md
-│   ├── frontend-security.md
-│   ├── seo-and-discoverability.md
-│   ├── performance-and-core-web-vitals.md
-│   │
-│   ├── internationalization-and-rtl.md
-│   ├── pwa-and-offline-support.md
-│   ├── observability-and-monitoring.md
-│   ├── debugging-and-self-correction.md
-│   ├── ci-cd-and-deployment.md
-│   ├── environment-configuration.md
-│   └── production-readiness.md
-│
-├── examples/
-│   ├── nextjs-app-router/
-│   ├── reusable-components/
-│   ├── theme-system/
-│   ├── authentication-and-rbac/
-│   ├── modal-and-notifications/
-│   ├── api-integration/
-│   ├── tanstack-query/
-│   └── forms-and-validation/
-│
-├── scripts/
-│   └── validate_skill.py
-│
-└── evals/
-    └── evals.json
+```bash
+uv run python scripts/validate_skill.py
 ```
 
-______________________________________________________________________
+The validation script checks the skill structure, documentation formatting, Python tooling, available tests, and Markdown links.
 
-## 4. Development Progress
+Note: Passing validation does not guarantee that every instruction or implementation example has been tested in every coding agent.
 
-### Phase 0 — Repository Foundation
+## Compatibility
 
-**Status:** Initial setup supplied
+The skill follows the Agent Skills format and is intended for compatible AI coding agents.
 
-- [x] Repository created.
-- [x] Repository cloned locally.
-- [x] Git remote verified.
-- [x] Initial directory structure created.
-- [ ] Verify all scaffold files locally.
-- [ ] Initial repository commit.
+Installation and discovery behavior may vary depending on the agent and its supported skill implementation.
 
-### Phase 1 — Core Engineering Intelligence
+## Known Limitations
 
-**Status:** Draft content supplied
+- Evaluation coverage is still developing.
+- Agent compatibility requires practical testing across supported environments.
+- Reference documentation requires ongoing maintenance as frameworks and tooling evolve.
+- Not every implementation pattern has been tested in a complete application.
 
-- [x] `architecture-and-project-structure.md`
-- [x] `react-engineering.md`
-- [x] `nextjs-engineering.md`
-- [x] `rendering-and-caching-strategies.md`
-- [x] `typescript-and-code-quality.md`
-- [ ] Verify all files locally.
-- [ ] Validate technical accuracy.
-- [ ] Integrate references into `SKILL.md`.
+## Current Priorities
 
-### Phase 2 — UI Engineering and Design System
+1. Install and verify the skill in coding agents.
+2. Evaluate behavior on real frontend projects.
+3. Improve evaluation coverage.
+4. Refine instructions based on actual usage.
+5. Maintain technical accuracy and compatibility.
 
-**Status:** Draft content supplied
+## Release Information
 
-- [x] `global-styles-and-design-tokens.md`
-- [x] `theming-and-dark-mode.md`
-- [x] `reusable-ui-components.md`
-- [x] `layouts-and-navigation.md`
-- [x] `dialogs-modals-and-overlays.md`
-- [x] `notifications-and-push.md`
-- [x] `ui-design-quality-and-impeccable.md`
-- [ ] Verify all files locally.
-- [ ] Validate framework-specific examples.
-- [ ] Integrate references into `SKILL.md`.
+**Current version:** `0.1.0`
 
-### Phase 3 — Application Architecture and Integrations
+See [CHANGELOG.md](CHANGELOG.md) for release details.
 
-**Status:** Draft content supplied
+## Project Links
 
-- [x] `authentication-and-authorization.md`
-- [x] `api-integration.md`
-- [x] `forms-and-validation.md`
-- [x] `state-management.md`
-- [x] `package-selection-and-ecosystem.md`
-- [x] `reusable-frontend-modules.md`
-- [ ] Verify all files locally.
-- [ ] Review security and integration guidance.
-- [ ] Integrate references into `SKILL.md`.
-
-### Phase 4 — Quality, Security and Optimization
-
-**Status:** In progress
-
-- [x] `accessibility-and-wcag.md`
-- [x] `testing-strategy.md`
-- [x] `anti-ai-slop-and-engineering-quality.md`
-- [x] `frontend-security.md`
-- [ ] `seo-and-discoverability.md`
-- [ ] `performance-and-core-web-vitals.md`
-- [ ] Verify all files locally.
-- [ ] Validate technical accuracy.
-- [ ] Integrate quality standards into `SKILL.md` and evaluations.
-
-### Phase 5 — Advanced and Production Engineering
-
-**Status:** Pending
-
-- [ ] `internationalization-and-rtl.md`
-- [ ] `pwa-and-offline-support.md`
-- [ ] `observability-and-monitoring.md`
-- [ ] `debugging-and-self-correction.md`
-- [ ] `ci-cd-and-deployment.md`
-- [ ] `environment-configuration.md`
-- [ ] `production-readiness.md`
-
-### Phase 6 — Examples, Evaluation and Validation
-
-**Status:** Pending
-
-- [ ] Create practical examples.
-- [ ] Implement skill validation.
-- [ ] Develop agent evaluation scenarios.
-- [ ] Test new-project workflows.
-- [ ] Test existing-project modification workflows.
-- [ ] Test debugging and regression workflows.
-- [ ] Test anti-AI-slop standards.
-- [ ] Verify documentation links.
-- [ ] Validate reference connections.
-- [ ] Test compatibility across supported coding agents.
-
-### Phase 7 — GitHub Release and Distribution
-
-**Status:** Pending
-
-- [ ] Finalize `SKILL.md`.
-- [ ] Finalize `README.md`.
-- [ ] Finalize installation instructions.
-- [ ] Review `CHANGELOG.md`.
-- [ ] Validate the complete repository.
-- [ ] Commit and push changes.
-- [ ] Create version `0.1.0` release.
-- [ ] Publish/distribute through skills.sh.
-- [ ] Test installation and usage in supported agents.
-
-______________________________________________________________________
-
-## 5. Current Reference Count
-
-| Phase | Planned references |
-| ---------------------------------- | -----------------: |
-| Phase 1 — Core Engineering | 5 |
-| Phase 2 — UI Engineering | 7 |
-| Phase 3 — Application Architecture | 6 |
-| Phase 4 — Quality and Optimization | 6 |
-| Phase 5 — Production Engineering | 7 |
-| **Total** | **31** |
-
-The anti-AI-slop reference is an additional cross-cutting engineering standard within Phase 4.
-
-______________________________________________________________________
-
-## 6. Mandatory Final Integration
-
-Before release, ensure:
-
-1. `SKILL.md` contains clear instructions for both new and existing projects.
-1. All relevant references are discoverable from `SKILL.md`.
-1. Agents inspect before modifying existing projects.
-1. Agents follow the anti-AI-slop and engineering-quality standard.
-1. Agents use official documentation for version-sensitive decisions.
-1. Agents verify changes instead of making unsupported claims.
-1. Evaluation scenarios test real agent behavior.
-1. The validator checks required structure and reference links.
-
-The references must work together as one coherent engineering system rather than a collection of unrelated documents.
-
-______________________________________________________________________
-
-## 7. Working Rules
-
-- Work phase by phase.
-- Create one reference at a time.
-- Keep documentation practical and accurate.
-- Use copy-paste-ready Markdown.
-- Avoid unnecessary complexity.
-- Do not duplicate guidance across references without a reason.
-- Preserve the existing repository structure where possible.
-- Inspect and improve the actual project when required.
-- Never claim a file was saved, tested, committed or pushed without verification.
-- Keep this status file updated as work progresses.
-
-______________________________________________________________________
-
-## 8. Current Position
-
-**Current phase:** Phase 4 — Quality, Security and Optimization
-
-**Last reference supplied:** `frontend-security.md`
-
-**Next reference:** `seo-and-discoverability.md`
-
-**Following reference:** `performance-and-core-web-vitals.md`
-
-**Immediate objective:** Complete Phase 4, then proceed to Phase 5.
-
-**Release target:** `0.1.0`
-
-______________________________________________________________________
-
-_This document tracks development progress. A supplied draft is not considered locally saved, validated or released until that action is verified._
+- **Repository:** https://github.com/thirusakthi-dev/modern-frontend-engineering
+- **Issues:** https://github.com/thirusakthi-dev/modern-frontend-engineering/issues
+- **License:** MIT
