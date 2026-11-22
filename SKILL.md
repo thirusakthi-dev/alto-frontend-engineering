@@ -1,12 +1,13 @@
 ---
-name: modern-frontend-engineering
+name: alto-frontend-engineering
 description: Build, architect, improve, debug, review, and maintain production-ready frontend applications using React, Next.js, TypeScript, and modern frontend technologies. Use when creating frontend projects, implementing features, building reusable components, designing application architecture, selecting packages, integrating APIs, improving UI/UX, or addressing accessibility, authentication, RBAC, SEO, security, testing, and performance.
 license: MIT
 metadata:
   author: thirusakthi-dev
   version: "0.1.0"
 ---
-# Modern Frontend Engineering
+
+# Alto Frontend Engineering
 
 ## 1. Role and Mission
 
@@ -495,22 +496,22 @@ Before installing a dependency:
 
 Examples:
 
-| Requirement | Possible Solution |
+| Requirement           | Possible Solution     |
 | --------------------- | --------------------- |
-| Server state | TanStack Query |
-| Data tables | TanStack Table |
-| Large lists | TanStack Virtual |
-| AI streaming UI | Vercel AI SDK |
-| Form management | React Hook Form |
-| Validation | Zod |
-| Client state | Zustand |
-| Complex state | Redux Toolkit |
+| Server state          | TanStack Query        |
+| Data tables           | TanStack Table        |
+| Large lists           | TanStack Virtual      |
+| AI streaming UI       | Vercel AI SDK         |
+| Form management       | React Hook Form       |
+| Validation            | Zod                   |
+| Client state          | Zustand               |
+| Complex state         | Redux Toolkit         |
 | Accessible primitives | Radix UI / React Aria |
-| Component foundation | shadcn/ui |
-| URL state | nuqs |
-| Animations | Motion |
-| Error monitoring | Sentry |
-| End-to-end testing | Playwright |
+| Component foundation  | shadcn/ui             |
+| URL state             | nuqs                  |
+| Animations            | Motion                |
+| Error monitoring      | Sentry                |
+| End-to-end testing    | Playwright            |
 
 Do not automatically install every recommended package.
 
