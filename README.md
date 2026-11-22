@@ -1,477 +1,278 @@
-# Modern Frontend Engineering
+# Alto Frontend Engineering
 
-A production-focused Agent Skill for building, architecting, improving, debugging, reviewing, and maintaining modern frontend applications.
+**Build with standards. Engineer with purpose.**
 
-Designed to help AI coding agents deliver reliable, accessible, secure, maintainable, and production-ready frontend solutions.
+Alto Frontend Engineering is an AI coding-agent skill that brings a consistent, quality-first engineering approach to frontend development.
 
-Works with both new projects and existing codebases, following the project's actual stack, architecture, requirements, and conventions.
+It helps coding agents understand, build, improve, debug, refactor, and review frontend applications — from initial project setup to production readiness.
 
-## Installation
-
-Install using the [Skills CLI](https://github.com/vercel-labs/skills).
-
-### Prerequisites
-
-- Node.js and npm.
-- A coding agent that supports the Agent Skills format.
-- Internet access to retrieve the skill repository.
-
-### Install for All Detected Agents
-
-Run the following command and select the coding agents you want to install the skill in:
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering
-```
-
-### Install for a Specific Agent
-
-Use the `--agent` option to target a particular coding agent.
-
-**OpenCode**
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering -a opencode
-```
-
-**Claude Code**
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering -a claude-code
-```
-
-**Cursor**
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering -a cursor
-```
-
-**OpenAI Codex**
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering -a codex
-```
-
-Agent identifiers and availability depend on the Skills CLI version. Refer to its documentation for the current supported list.
-
-### Global Installation
-
-Install the skill globally so it can be discovered across projects by the selected agent:
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering -g
-```
-
-### Global Installation for a Specific Agent
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering -g -a opencode
-```
-
-Replace `opencode` with the identifier of your preferred supported agent.
-
-### Project-Level Installation
-
-To install the skill within the current project:
-
-```bash
-npx skills add thirusakthi-dev/modern-frontend-engineering
-```
-
-When prompted, choose the project-level installation option and the target agent.
-
-### Verify Installation
-
-After installation:
-
-1. Open your coding agent.
-2. Open a frontend project.
-3. Ask the agent to use the `modern-frontend-engineering` skill.
-4. Verify that it follows the skill instructions and uses the relevant reference documentation.
-
-If the agent does not discover the skill, check its supported skill directory and restart or reload the agent.
-
-### Updating the Skill
-
-To update installed skills:
-
-```bash
-npx skills update
-```
-
-The CLI updates installed skills where supported. Check the CLI documentation for update behavior and options.
-
-### Uninstalling
-
-Use the Skills CLI to remove an installed skill:
-
-```bash
-npx skills remove modern-frontend-engineering
-```
-
-Check the CLI prompts and options to select the appropriate agent and installation scope.
-
-### Installation Resources
-
-- [Skills CLI](https://github.com/vercel-labs/skills)
-- [Agent Skills Specification](https://agentskills.io/)
-- [GitHub Repository](https://github.com/thirusakthi-dev/modern-frontend-engineering)
+Rather than focusing only on generating code, Alto emphasizes the complete engineering process: understanding the codebase, making sound technical decisions, implementing reliable solutions, and verifying the results.
 
 ---
 
-## Overview
+## Installation
 
-Modern Frontend Engineering provides practical engineering instructions and detailed references across the frontend development lifecycle.
+Alto uses the [Vercel Skills CLI](https://skills.sh/) to install the skill into compatible AI coding agents.
 
-It is built around one core principle:
+### Install Alto
 
-**Build software with engineering judgment, not just generated code.**
+```bash
+npx skills add thirusakthi-dev/alto-frontend-engineering --skill alto-frontend-engineering
+```
 
-The skill guides coding agents to understand the project before making changes, choose justified solutions, implement complete functionality, and verify their work.
+### Discover available skills
 
-It does not assume every task starts from a blank project or force a particular framework, architecture, or technology into existing codebases.
+```bash
+npx skills add thirusakthi-dev/alto-frontend-engineering --list
+```
 
-## Key Capabilities
+### Verify installation
 
-### 1. Project Understanding
+```bash
+npx skills list
+```
 
-- Inspect existing repositories, project structures, and dependencies.
-- Understand framework versions and established conventions.
-- Identify relevant files before modifying code.
-- Follow existing architecture where appropriate.
-- Recognize project-specific constraints and requirements.
-- Avoid unnecessary rewrites and migrations.
+The installed skill should appear in the project or global skills list, depending on your installation selection.
 
-### 2. Frontend Development
+### Supported coding agents
 
-- React engineering.
-- Next.js App Router.
-- TypeScript and code quality.
-- Application architecture and project structure.
-- Reusable UI components and frontend modules.
-- State management and data fetching.
-- Package selection and ecosystem evaluation.
+Alto is designed for use with compatible agents supported by the Skills CLI, including:
 
-### 3. UI/UX Engineering
+- Kilo Code
+- Cursor
+- Claude Code
+- Codex
+- GitHub Copilot
+- Gemini CLI
+- Cline
+- OpenCode
+- Windsurf
 
-- UI design quality and visual consistency.
-- Responsive layouts and navigation.
-- Accessibility and WCAG.
-- Theming, dark mode, and design systems.
-- Internationalization and RTL.
-- Dialogs, modals, and overlays.
-- Notifications and push support.
+Agent availability and installation options depend on the Skills CLI and the agent's support for Agent Skills.
 
-### 4. Application Development
+---
 
-- API integration and error handling.
-- Forms and validation.
-- Authentication and authorization.
-- Role-based access control (RBAC).
-- SEO and discoverability.
-- Progressive Web Apps and offline support.
-- Rendering and caching strategies.
+## Why Alto?
 
-### 5. Production Engineering
+AI coding agents can generate frontend code quickly, but code generation alone does not guarantee a reliable application.
 
-- Frontend security.
-- Environment configuration.
-- Development, staging, and production separation.
-- Performance and Core Web Vitals.
-- Testing strategies.
-- Debugging and root-cause analysis.
-- Observability and monitoring.
-- CI/CD and deployment.
-- Production readiness.
+Without sufficient engineering context, an agent may:
 
-### 6. Engineering Quality
+- Introduce unnecessary dependencies.
+- Create generic or inconsistent interfaces.
+- Ignore existing project conventions.
+- Overcomplicate simple requirements.
+- Miss accessibility and security concerns.
+- Introduce performance problems.
+- Leave incomplete or unverified implementations.
 
-- Correctness over superficial implementation.
-- Maintainability and readability.
-- Simplicity over unnecessary abstraction.
-- Security and accessibility throughout development.
-- Evidence-based package and architecture decisions.
-- Verification instead of unsupported claims.
-- Protection against generic AI-generated output and AI slop.
+Alto addresses these problems by giving agents a structured engineering approach.
 
-## How It Works
+The goal is not to generate more code. It is to produce better engineering outcomes.
 
-The skill guides coding agents through a context-aware engineering workflow.
+## What Alto Covers
 
-### Understand
+Alto provides guidance across the frontend development lifecycle.
 
-- Inspect the repository and relevant files.
-- Identify the existing stack and conventions.
-- Understand the requested outcome and constraints.
-- Review relevant documentation and dependencies.
+| Area                  | Coverage                                                                 |
+| --------------------- | ------------------------------------------------------------------------ |
+| Project Understanding | Repository inspection, stack discovery, conventions and requirements     |
+| Architecture          | Component architecture, folder organization, separation of concerns      |
+| UI/UX Engineering     | Responsive layouts, design consistency, interaction states and usability |
+| React Development     | Components, hooks, composition, rendering and application patterns       |
+| Next.js               | App Router, routing, layouts, rendering and application structure        |
+| TypeScript            | Strict typing, reusable types and maintainable interfaces                |
+| Styling               | Tailwind CSS, modern CSS, design tokens and responsive styling           |
+| State Management      | Context, Zustand, Redux Toolkit and appropriate state ownership          |
+| Data Fetching         | TanStack Query, API integration, caching and error handling              |
+| Forms and Validation  | React Hook Form, Zod and form-state management                           |
+| Animation             | Framer Motion, CSS transitions and motion accessibility                  |
+| Tables and Data UI    | TanStack Table and structured data presentation                          |
+| Accessibility         | Semantic HTML, keyboard navigation, focus management and WCAG principles |
+| SEO                   | Metadata, indexing, structured data and technical SEO                    |
+| Security              | Input handling, XSS prevention, safe rendering and frontend security     |
+| Performance           | Rendering efficiency, bundle optimization and Core Web Vitals            |
+| Testing               | Vitest, React Testing Library and Playwright                             |
+| Debugging             | Error investigation, root-cause analysis and regression prevention       |
+| Production Readiness  | Build verification, environment awareness and deployment considerations  |
 
-### Plan
+These technologies are examples, not mandatory dependencies. Alto encourages agents to use the project's existing tools and introduce new packages only when they solve a genuine requirement.
 
-- Identify the appropriate implementation approach.
-- Consider existing architecture and potential side effects.
-- Select justified tools and dependencies.
-- Avoid unnecessary changes.
+## Built for New and Existing Projects
 
-### Implement
+Alto supports two major development scenarios.
 
-- Make focused, complete, maintainable changes.
-- Follow existing project conventions.
-- Handle errors, edge cases, and accessibility.
-- Preserve unrelated functionality.
+### 1. Building a New Application
 
-### Verify
+When starting a new project, Alto helps agents:
 
-- Run relevant tests and checks.
+- Understand the requirements and application scope.
+- Choose an appropriate architecture and technology stack.
+- Establish project conventions and folder organization.
+- Set up reusable components and application foundations.
+- Implement features with accessibility and performance in mind.
+- Verify the application before considering the work complete.
+
+### 2. Working with an Existing Application
+
+Alto does not assume every task starts from an empty repository.
+
+When modifying an existing project, agents should:
+
+- Inspect the repository and relevant documentation.
+- Identify the current framework, dependencies and conventions.
+- Understand the existing architecture before making changes.
+- Preserve established patterns where they remain appropriate.
+- Fix bugs and implement changes without unnecessary rewrites.
+- Refactor incrementally and safely.
+- Run relevant checks and verify the final result.
+
+The existing project's architecture should guide implementation decisions. Unnecessary migrations and structural changes should be avoided.
+
+## Engineering Workflow
+
+Alto encourages a structured workflow throughout development.
+
+### 1. Understand
+
+- Inspect the relevant project files.
+- Understand the requirements and constraints.
+- Identify existing conventions and dependencies.
+- Clarify important ambiguities before implementation.
+
+### 2. Plan
+
+- Identify the affected components and files.
+- Choose an appropriate implementation approach.
+- Consider accessibility, security and performance.
+- Avoid unnecessary complexity and unrelated changes.
+
+### 3. Implement
+
+- Write clean, maintainable and appropriately typed code.
+- Reuse existing components and utilities where suitable.
+- Handle loading, empty, error and success states.
+- Follow established project conventions.
+- Keep the implementation focused on the requested outcome.
+
+### 4. Verify
+
 - Review the implementation for correctness.
-- Check security, accessibility, and performance implications.
-- Report what was actually verified.
-
-This workflow applies to both new development and existing project maintenance.
+- Run relevant linting, type checks and tests.
+- Run the production build when appropriate.
+- Investigate and fix issues introduced by the changes.
+- Clearly report what was verified and what remains unverified.
 
 ## Engineering Philosophy
 
-The skill emphasizes the following standards:
+Alto follows a quality-first engineering philosophy.
 
-| Principle       | Expectation                                           |
-| --------------- | ----------------------------------------------------- |
-| Context first   | Understand the project before changing it             |
-| Correctness     | Implement functional and reliable solutions           |
-| Simplicity      | Avoid unnecessary complexity                          |
-| Maintainability | Keep code understandable and extensible               |
-| Security        | Apply security practices throughout development       |
-| Accessibility   | Include accessible behavior in implementations        |
-| Performance     | Avoid unnecessary dependencies and overhead           |
-| Consistency     | Respect established project conventions               |
-| Verification    | Run relevant checks and validate changes              |
-| Practicality    | Prefer real engineering solutions over generic advice |
+**Correctness over assumptions**
 
-Recommendations should be based on actual requirements and project context rather than personal preferences or fixed technology assumptions.
+Understand the requirements and existing implementation before making changes.
+
+**Simplicity over unnecessary abstraction**
+
+Prefer straightforward solutions. Avoid overengineering and premature abstractions.
+
+**Consistency over personal preference**
+
+Respect the existing codebase and its conventions unless there is a clear reason to improve them.
+
+**Accessibility by default**
+
+Build interfaces that work for different users, devices and interaction methods.
+
+**Performance as an engineering requirement**
+
+Consider rendering, network requests, bundle size and user-perceived performance.
+
+**Security throughout development**
+
+Apply appropriate input handling, safe rendering and secure frontend practices.
+
+**Verification over claims**
+
+Do not claim that code works, builds or passes tests without actually checking it.
+
+**Quality over AI-generated volume**
+
+Avoid generic layouts, superficial implementations, unnecessary dependencies, placeholder-heavy output and invented functionality.
 
 ## Technology Coverage
 
-The skill provides guidance across modern frontend technologies and engineering practices.
+Alto is designed around modern frontend engineering practices, with particular attention to:
 
-| Area             | Coverage                            |
-| ---------------- | ----------------------------------- |
-| Frameworks       | React, Next.js                      |
-| Languages        | TypeScript, JavaScript              |
-| Styling          | CSS, Tailwind CSS, theming          |
-| Data fetching    | API integration, TanStack Query     |
-| State management | Client and server state             |
-| Forms            | Validation and form handling        |
-| Security         | Authentication, authorization, RBAC |
-| Accessibility    | WCAG and inclusive interfaces       |
-| SEO              | Metadata and discoverability        |
-| Performance      | Core Web Vitals, rendering, caching |
-| Testing          | Testing strategy and verification   |
-| Deployment       | CI/CD and production environments   |
+- React and Next.js
+- JavaScript and TypeScript
+- Tailwind CSS and modern CSS
+- Component-driven architecture
+- Client-side and server-side state management
+- API integration and data fetching
+- Forms and schema validation
+- Accessibility and technical SEO
+- Frontend security and performance
+- Unit, component and end-to-end testing
+- Debugging, refactoring and production readiness
 
-The skill does not require every project to use every technology listed. Recommendations depend on the existing stack and project requirements.
+The guidance should adapt to the actual project. It does not require every application to use the same framework, library or architecture.
 
-## Repository Structure
+## Development Standards
 
-```text
-modern-frontend-engineering/
-├── SKILL.md
-│
-├── references/
-│   ├── accessibility-and-wcag.md
-│   ├── anti-ai-slop-and-engineering-quality.md
-│   ├── api-integration.md
-│   ├── architecture-and-project-structure.md
-│   ├── authentication-and-authorization.md
-│   ├── ci-cd-and-deployment.md
-│   ├── debugging-and-self-correction.md
-│   ├── dialogs-modals-and-overlays.md
-│   ├── environment-configuration.md
-│   ├── forms-and-validation.md
-│   ├── frontend-security.md
-│   ├── internationalization-and-rtl.md
-│   ├── layouts-and-navigation.md
-│   ├── nextjs-engineering.md
-│   ├── notifications-and-push.md
-│   ├── observability-and-monitoring.md
-│   ├── package-selection-and-ecosystem.md
-│   ├── performance-and-core-web-vitals.md
-│   ├── production-readiness.md
-│   ├── pwa-and-offline-support.md
-│   ├── react-engineering.md
-│   ├── rendering-and-caching-strategies.md
-│   ├── reusable-frontend-modules.md
-│   ├── reusable-ui-components.md
-│   ├── seo-and-discoverability.md
-│   ├── state-management.md
-│   ├── testing-strategy.md
-│   ├── theming-and-dark-mode.md
-│   ├── typescript-and-code-quality.md
-│   └── ui-design-quality-and-impeccable.md
-│
-├── examples/
-│   ├── README.md
-│   ├── api-integration/
-│   ├── authentication-and-rbac/
-│   ├── forms-and-validation/
-│   ├── modal-and-notifications/
-│   ├── nextjs-app-router/
-│   ├── reusable-components/
-│   └── tanstack-query/
-│
-├── scripts/
-│   └── validate_skill.py
-│
-├── evals/
-│   └── evals.json
-│
-├── CHANGELOG.md
-├── CONTRIBUTING.md
-├── DEVELOPMENT_PLAN.md
-├── PROJECT_STATUS.md
-├── LICENSE
-├── README.md
-├── pyproject.toml
-└── uv.lock
-```
+Alto encourages agents to follow these standards:
 
-### Important Files
+- Inspect before modifying.
+- Reuse before introducing new dependencies.
+- Prefer strict typing and avoid unsafe shortcuts.
+- Keep components focused and maintainable.
+- Handle realistic application states and edge cases.
+- Avoid duplicated logic and unnecessary abstractions.
+- Respect environment-specific configuration.
+- Keep secrets out of source code.
+- Consider development, staging and production separately.
+- Run appropriate checks after implementation.
+- Report limitations and verification results honestly.
 
-| File or Directory     | Purpose                                        |
-| --------------------- | ---------------------------------------------- |
-| `SKILL.md`            | Core instructions followed by the coding agent |
-| `references/`         | Detailed frontend engineering guidance         |
-| `examples/`           | Practical implementation patterns and examples |
-| `scripts/`            | Validation and maintenance tooling             |
-| `evals/`              | Evaluation cases for assessing skill behavior  |
-| `CHANGELOG.md`        | Release history                                |
-| `CONTRIBUTING.md`     | Contribution guidelines                        |
-| `DEVELOPMENT_PLAN.md` | Development direction and planned improvements |
-| `PROJECT_STATUS.md`   | Current project status                         |
-| `LICENSE`             | MIT License                                    |
+## Repository
 
-## Development and Validation
+**GitHub:** https://github.com/thirusakthi-dev/alto-frontend-engineering
 
-The repository uses Python and `uv` for its validation tooling.
+The repository contains the Agent Skill entry point and its supporting project documentation and resources as maintained in the repository.
 
-### Prerequisites
-
-- Python.
-- [uv](https://docs.astral.sh/uv/).
-- Git.
-
-### Setup
-
-Clone the repository:
-
-```bash
-git clone https://github.com/thirusakthi-dev/modern-frontend-engineering.git
-cd modern-frontend-engineering
-```
-
-Install development dependencies:
-
-```bash
-uv sync
-```
-
-### Run Full Validation
-
-```bash
-uv run python scripts/validate_skill.py
-```
-
-### Run Individual Checks
-
-Python linting:
-
-```bash
-uv run ruff check scripts
-```
-
-Python formatting:
-
-```bash
-uv run ruff format --check scripts
-```
-
-Tests:
-
-```bash
-uv run pytest
-```
-
-Markdown formatting is checked by the validation script.
-
-The validation tooling checks skill structure, Markdown formatting, Python code quality, available tests, and Markdown links.
-
-Passing automated validation does not guarantee that every instruction or implementation example has been tested in every coding agent or application.
-
-## Compatibility
-
-Modern Frontend Engineering follows the Agent Skills format and is designed to work across compatible AI coding agents.
-
-The skill is intended to remain agent-independent.
-
-Installation, discovery, and supported features may vary depending on the coding agent and its implementation of the Agent Skills format.
-
-Agent-specific installation instructions and limitations should be verified against the respective agent's documentation.
+The `SKILL.md` file defines the skill's identity, purpose and core instructions.
 
 ## Contributing
 
-Contributions are welcome.
+Contributions and suggestions are welcome.
 
-You can help improve the project by:
+If you find an issue, have an improvement idea or want to contribute:
 
-- Improving engineering guidance.
-- Correcting outdated technical recommendations.
-- Adding practical implementation examples.
-- Improving core skill instructions.
-- Expanding evaluation coverage.
-- Testing compatibility with coding agents.
-- Reporting issues and suggesting improvements.
+1. Explore the existing repository and its conventions.
+2. Identify the specific improvement or issue.
+3. Keep changes focused and consistent with Alto's engineering principles.
+4. Verify documentation, examples and relevant checks.
+5. Submit your contribution through GitHub.
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting changes.
-
-## Development Roadmap
-
-Planned development priorities include:
-
-- Continuously improving core skill instructions.
-- Maintaining accurate framework and ecosystem guidance.
-- Expanding practical implementation examples.
-- Improving evaluation coverage.
-- Testing compatibility across coding agents.
-- Refining validation tooling.
-- Improving documentation based on practical usage and community feedback.
-
-See [DEVELOPMENT_PLAN.md](DEVELOPMENT_PLAN.md) for the development direction.
+Please avoid adding unnecessary complexity or duplicating existing guidance.
 
 ## Project Status
 
-**Current version:** `0.1.0`
+Alto Frontend Engineering is an evolving project.
 
-**Release status:** Initial release.
-
-The project includes core skill instructions, detailed reference documentation, implementation pattern examples, evaluation cases, and validation tooling.
-
-See [PROJECT_STATUS.md](PROJECT_STATUS.md) for current capabilities, validation results, and known limitations.
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for release history and notable changes.
+Its goal is to provide practical, consistent frontend engineering guidance for AI coding agents as frontend technologies and development practices evolve.
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
-
-You are free to use, modify, and distribute this project under the terms of the license.
+See the repository's `LICENSE` file for licensing information.
 
 ## Links
 
-- **Repository:** https://github.com/thirusakthi-dev/modern-frontend-engineering
-- **Issues:** https://github.com/thirusakthi-dev/modern-frontend-engineering/issues
-- **Contributing:** [CONTRIBUTING.md](CONTRIBUTING.md)
-- **Development Plan:** [DEVELOPMENT_PLAN.md](DEVELOPMENT_PLAN.md)
-- **Project Status:** [PROJECT_STATUS.md](PROJECT_STATUS.md)
-- **Changelog:** [CHANGELOG.md](CHANGELOG.md)
-- **License:** [LICENSE](LICENSE)
-- **Skills CLI:** https://github.com/vercel-labs/skills
-- **Agent Skills Specification:** https://agentskills.io/
+- **GitHub Repository:** https://github.com/thirusakthi-dev/alto-frontend-engineering
+- **Skills CLI:** https://skills.sh/
+- **Installation:** `npx skills add thirusakthi-dev/alto-frontend-engineering --skill alto-frontend-engineering`
+
+---
+
+**Alto Frontend Engineering**
+
+_Build with standards. Engineer with purpose._
